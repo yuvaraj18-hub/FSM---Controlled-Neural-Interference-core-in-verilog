@@ -1,14 +1,10 @@
 `timescale 1ns/1ps
-
 module top_gesture (
     input clk,
     input start,
     output [15:0] result,
     output done
 );
-    // Instantiate your submodules like FSM, MAC, etc. here
-    // Example dummy logic:
     assign result = 16'hABCD;
     assign done = 1;
-
 endmodule
