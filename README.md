@@ -39,5 +39,5 @@ Option 2: Local Simulation
 
 1. Use any Verilog simulator like ModelSim or Icarus Verilog:
 iverilog -o fsm.vvp VERILOG.CODE TESTBENCH CODE
-vvp fsm.vvp
-gtkwave dump.vcd
+>> vvp fsm.vvp
+>> gtkwave dump.vcd
