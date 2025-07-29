@@ -3,20 +3,15 @@ module tb_top;
   reg clk, start;
   wire [15:0] result;
   wire done;
-
   top_gesture uut(clk, start, result, done);
-
   always #5 clk = ~clk;
-
   initial begin
     $dumpfile("wave.vcd");
     $dumpvars(0, tb_top);
-
     clk = 0; start = 0;
     #10; start = 1;
     #10; start = 0;
     #50;
-
     $finish;
   end
 endmodule
